@@ -1,0 +1,19 @@
+<p>roles works!</p>
+<div class = "row">
+    <div class = "col-3"><p>Firstame is {{firstName}}</p></div>
+    <div class = "col-3"><p>version is {{version}}</p></div>
+</div>
+<div class = "row">
+    <div class = "col-3">
+        <input type = "text" [value] = "firstName" class="form=control"/>
+        <input type = "text" [(ngModel)] = "firstName" class="form=control"/>
+    </div>
+    <div class = "col-3">
+        <input [type] = "inputType"/>
+    </div>
+</div>
+<div class = "row">
+    <div class = "col-3">
+        <button class = "btn btn-success" (click)="showWelcomeAlert()">Show Alert</button>
+    </div>
+</div>
